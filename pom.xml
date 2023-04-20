@@ -11,23 +11,21 @@
 	<groupId>com.spring</groupId>
 	<artifactId>skaiciuotuvas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>war</packaging>  <!-- Butinai war tom catui -->
 	<name>InternetinisSkaiciuotuvas</name>
 	<description>Skaiciutuvas Spring Boote</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+		<!-- Projektas sukonfiguruotas spring boot web aplikacijoms -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-			<scope>provided</scope>
-		</dependency>
+
+		<!-- Testavimui Junitai -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -38,6 +36,7 @@
 	<build>
 		<plugins>
 			<plugin>
+				<!-- Vygdomajam (executible jar pagaminti, iskiepis -->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
